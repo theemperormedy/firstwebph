@@ -4,10 +4,25 @@
     font-style: normal;
 }
 /* shared styles */
+.secondary-bg{
+background-color: #b399d4;
+}
 .text-primary {
     color: blueviolet;
 }
-
+.section-title {
+    font-size: 70px; /* Dimensione del titolo aumentata */
+    font-weight: bold;
+    color: black;
+    text-align: center; /* Centra il testo */
+    margin-bottom: 20px; /* Spazio tra titolo e descrizione */
+}
+.section-description {
+    font-size: 30px; /* Dimensione della descrizione aumentata */
+    color: black;
+    text-align: center; /* Centra il testo */
+    margin-top: 30px; /* Spazio extra sopra la descrizione */
+}
 .btn-primary {
     background-color: blueviolet;
     font-weight: bold;
@@ -28,9 +43,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #f8f8f8;
+    background-color:transparent;
     justify-content: space-between;
-    margin: 50px 200px;
+    margin: 0px 200px;
 }
 
 /* Stile per la scritta RIC Solution */
@@ -53,7 +68,28 @@ nav li a {
     font-size: 20px;
 }
 
+/*header */
+.header{
+    background-image: url(../images/developer.png),url(../images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    padding: 0px 18px 0px 35px;
+    
+}
 /*banner styles*/
+.banner {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    align-items: center;
+}
+
+.banner-content{
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    
+}
 .banner-greetings{
     font-size: 45px;
     font-weight: 600;
@@ -62,4 +98,14 @@ nav li a {
 .banner-title {
     font-weight: bold;
     font-size: 45px;
+}
+
+.banner-profile-picture{
+    width: 580px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
