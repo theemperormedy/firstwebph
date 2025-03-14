@@ -1,111 +1,235 @@
+
+
 .open-sans-normal {
     font-family: "Open Sans", sans-serif;
-    font-weight: 400;
+    font-optical-sizing: auto;
     font-style: normal;
-}
-/* shared styles */
-.secondary-bg{
-background-color: #b399d4;
-}
-.text-primary {
-    color: blueviolet;
-}
-.section-title {
-    font-size: 70px; /* Dimensione del titolo aumentata */
-    font-weight: bold;
-    color: black;
-    text-align: center; /* Centra il testo */
-    margin-bottom: 20px; /* Spazio tra titolo e descrizione */
-}
-.section-description {
-    font-size: 30px; /* Dimensione della descrizione aumentata */
-    color: black;
-    text-align: center; /* Centra il testo */
-    margin-top: 30px; /* Spazio extra sopra la descrizione */
-}
-.btn-primary {
-    background-color: blueviolet;
-    font-weight: bold;
-    font-size: 20px;
-    color: #f8f8f8;
-    padding: 18px 35px;
-    border-radius: 5%;
-    border: none;
-}
-
-
-.dark-2 {
-    color: blueviolet;
-}
-/* Nav styles */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color:transparent;
-    justify-content: space-between;
-    margin: 0px 200px;
-}
-
-/* Stile per la scritta RIC Solution */
-nav h3 {
-    font-size: 3rem; /* Prova anche 4rem o 5rem per dimensioni maggiori */
-    font-weight: 800; /* Imposta il peso del carattere su 800 */
-}
-
-nav ul {
-    display: flex;
-    align-items: center;
-}
-
-nav ul li {
-    list-style: none;
-    margin-right: 50px;
-}
-nav li a {
-    text-decoration: none;
-    font-size: 20px;
-}
-
-/*header */
-.header{
-    background-image: url(../images/developer.png),url(../images/header_bg.png);
-    background-repeat: no-repeat;
-    background-position: top left, bottom right;
-    padding: 0px 18px 0px 35px;
-    
-}
-/*banner styles*/
-.banner {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px auto;
-    align-items: center;
-}
-
-.banner-content{
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
-    
-}
-.banner-greetings{
-    font-size: 45px;
-    font-weight: 600;
-}
-
-.banner-title {
-    font-weight: bold;
-    font-size: 45px;
-}
-
-.banner-profile-picture{
-    width: 580px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    font-variation-settings:
+      "wdth" 100;
+  }
+  
+  /* shared style */
+  .secondary-bg{
+      background-color: #d67eec;
+  }
+  .text-primary{
+      color: #ffffff;
+  }
+  .dark-2{
+      color: #474747;
+  }
+  
+  .btn-primary{
+      background-color: #e90afd;
+      font-weight: bold;
+      font-size: 20px;
+      color: white;
+      border: none;
+      padding: 18px 35px;
+      border-radius: 5px;
+  }
+  
+  .section-title{
+      font-size: 35px;
+      font-weight: bold;
+      color: #181818;
+  }
+  
+  .section-description{
+      font-size: 18px;
+      color: #757575;
+  }
+  
+  .text-center{
+      text-align: center;
+  }
+  /* header  */
+  .header{
+      background-image: url('../images/developer.png'), url('../images/header_bg.png');
+      background-repeat: no-repeat;
+      background-position: top left, bottom right;
+  }
+  
+  /* Nav styles */
+  nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 200px;
+  }
+  
+  .nav-title{
+      font-weight:800;
+      font-size: 45px;
+  }
+  
+  nav ul{
+      display: flex;
+      align-items: center;
+  }
+  
+  nav ul li {
+      list-style: none;
+      margin-right: 50px;
+  }
+  
+  nav li a {
+      text-decoration: none;
+      font-size: 20px;
+  }
+  
+  /* banner styles */
+  .banner{
+      display: flex;
+      justify-content: space-between;
+      margin: 0 35px 0 200px;
+  }
+  .banner-content{
+      max-width: 580px;
+  }
+  .banner-greetings{
+      font-size: 45px;
+      font-weight: 600;
+  }
+  
+  .banner-title{
+      font-weight: bold;
+      font-size: 85px;
+  }
+  .banner-profile-pic{
+      width: 580px;
+  }
+  
+  /* main styles */
+  main{
+      max-width: 1140px;
+      margin: 0 auto;
+  }
+  
+  main section{
+      margin-top: 130px;
+      margin-bottom: 130px;
+  }
+  
+  /* about styles */
+  .about{
+      border-radius: 10px;
+      padding: 130px 150px;
+      text-align: center;
+      
+  }
+  .about-items{
+      display: flex;
+      justify-content: space-around;
+  }
+  .item-description{
+      font-weight: 600;
+  }
+  
+  /* skills section styles */
+  .skills-container{
+      display: flex;
+      gap: 24px;
+  }
+  
+  .skill{
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* resume section styles */
+  .resume-container{
+      display: flex;
+      gap: 24px;
+  }
+  .experience-sub-title{
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 20px;
+  }
+  .experience-description, .experience-sub-title{
+      color: #757575;
+  }
+  .resume hr{
+      margin: 30px 5px;
+  }
+  
+  .resume-download-cv{
+      margin-top: 50px;
+  }
+  
+  /* footer styles */
+  footer{
+      padding: 130px 230px;
+      display: flex;
+      gap: 100px;
+  }
+  .footer-column{
+      width: 50%;
+  }
+  
+  footer input[type="text"],  footer input[type="email"], footer textarea{
+      height: 64px;
+      border-radius: 5px;
+      background-color: white;
+      display: block;
+      width: 100%;
+      padding: 10px 20px;
+      margin-bottom: 24px;
+      border: none;
+  }
+  
+  /* responsive media query */
+  @media screen and (max-width: 576px) {
+      .skills-container, 
+      .resume-container, 
+      .banner,
+      footer, 
+      nav, 
+      nav > ul,
+      .about-items{
+          flex-direction: column;
+      }
+  
+      nav > ul{
+          gap: 20px;
+      }
+  
+      .btn-primary{
+          margin-bottom: 20px;
+      }
+  
+      .banner {
+          margin: 20px;
+      }
+  
+      .banner-profile-pic{
+          width: 100%;
+      }
+  
+      .header{
+          background-image: none;
+      }
+  
+      footer, .about{
+          padding: 20px;
+      }
+  
+      .footer-column{
+          width: 100%;
+      }
+  
+      footer input[type="text"],  
+      footer input[type="email"], 
+      footer textarea{
+          width: calc(100% - 40px);
+      }
+  }
+  
+  /* tablet specific media query */
+  @media screen and (min-width: 576px) and (max-width:990px) {
+      .banner{
+          flex-direction: column;
+      }
+  }
